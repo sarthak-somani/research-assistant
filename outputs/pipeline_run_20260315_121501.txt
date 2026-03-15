@@ -1,0 +1,160 @@
+Graph built: START → orchestrator → scraper → analyst → assessor → critic → (analyst | END)
+Graph built: START → orchestrator → scraper → analyst → assessor → critic → (analyst | END)
+Orchestrator: decomposing query into research sub-domains
+Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Orchestrator: produced 4 research nodes: ['Automating the Vendor Tendering and Procurement Process using Agentic Frameworks', 'Predictive Demand Sensing for Raw-Material and Component-Level Inventory Optimisation', 'Agentic Frameworks for Proactive Logistics Disruption Resolution and Autonomous Re-routing', 'Generative AI for Predictive Quality Assurance and Root Cause Analysis from Unstructured Production Line Data']
+Market Scraper: researching 4 supply-chain nodes
+Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+Market Scraper [1/4]: researching 'Automating the Vendor Tendering and Procurement Process using Agentic Frameworks'
+Tavily search (attempt 1/3): "Automating the Vendor Tendering and Procurement Process using Agentic Framework
+Tavily returned 3 results (3 after filtering) for: "Automating the Vendor Tendering and Procurement Process using Agentic Framework
+Tavily search (attempt 1/3): "Automating the Vendor Tendering and Procurement Process using Agentic Framework
+Tavily returned 3 results (3 after filtering) for: "Automating the Vendor Tendering and Procurement Process using Agentic Framework
+Tavily search (attempt 1/3): "Automating the Vendor Tendering and Procurement Process using Agentic Framework
+Tavily returned 3 results (3 after filtering) for: "Automating the Vendor Tendering and Procurement Process using Agentic Framework
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Market Scraper [1/4]: extracted 414 chars of evidence for 'Automating the Vendor Tendering and Procurement Process using Agentic Frameworks'
+Market Scraper [2/4]: researching 'Predictive Demand Sensing for Raw-Material and Component-Level Inventory Optimisation'
+Tavily search (attempt 1/3): "Predictive Demand Sensing for Raw-Material and Component-Level Inventory Optimi
+Tavily returned 3 results (3 after filtering) for: "Predictive Demand Sensing for Raw-Material and Component-Level Inventory Optimi
+Tavily search (attempt 1/3): "Predictive Demand Sensing for Raw-Material and Component-Level Inventory Optimi
+Tavily returned 3 results (3 after filtering) for: "Predictive Demand Sensing for Raw-Material and Component-Level Inventory Optimi
+Tavily search (attempt 1/3): "Predictive Demand Sensing for Raw-Material and Component-Level Inventory Optimi
+Tavily returned 3 results (3 after filtering) for: "Predictive Demand Sensing for Raw-Material and Component-Level Inventory Optimi
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Market Scraper [2/4]: extracted 1925 chars of evidence for 'Predictive Demand Sensing for Raw-Material and Component-Level Inventory Optimisation'
+Market Scraper [3/4]: researching 'Agentic Frameworks for Proactive Logistics Disruption Resolution and Autonomous Re-routing'
+Tavily search (attempt 1/3): "Agentic Frameworks for Proactive Logistics Disruption Resolution and Autonomous
+Tavily returned 3 results (3 after filtering) for: "Agentic Frameworks for Proactive Logistics Disruption Resolution and Autonomous
+Tavily search (attempt 1/3): "Agentic Frameworks for Proactive Logistics Disruption Resolution and Autonomous
+Tavily returned 3 results (3 after filtering) for: "Agentic Frameworks for Proactive Logistics Disruption Resolution and Autonomous
+Tavily search (attempt 1/3): "Agentic Frameworks for Proactive Logistics Disruption Resolution and Autonomous
+Tavily returned 3 results (3 after filtering) for: "Agentic Frameworks for Proactive Logistics Disruption Resolution and Autonomous
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Market Scraper [3/4]: extracted 1485 chars of evidence for 'Agentic Frameworks for Proactive Logistics Disruption Resolution and Autonomous Re-routing'
+Market Scraper [4/4]: researching 'Generative AI for Predictive Quality Assurance and Root Cause Analysis from Unstructured Production Line Data'
+Tavily search (attempt 1/3): "Generative AI for Predictive Quality Assurance and Root Cause Analysis from Uns
+Tavily returned 3 results (3 after filtering) for: "Generative AI for Predictive Quality Assurance and Root Cause Analysis from Uns
+Tavily search (attempt 1/3): "Generative AI for Predictive Quality Assurance and Root Cause Analysis from Uns
+Tavily returned 3 results (3 after filtering) for: "Generative AI for Predictive Quality Assurance and Root Cause Analysis from Uns
+Tavily search (attempt 1/3): "Generative AI for Predictive Quality Assurance and Root Cause Analysis from Uns
+Tavily returned 3 results (3 after filtering) for: "Generative AI for Predictive Quality Assurance and Root Cause Analysis from Uns
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Market Scraper [4/4]: extracted 972 chars of evidence for 'Generative AI for Predictive Quality Assurance and Root Cause Analysis from Unstructured Production Line Data'
+Market Scraper: completed — 4 evidence blocks collected, 0 errors
+Economic Analyst: FIRST PASS — synthesising 4 evidence blocks into 5 use cases
+Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Economic Analyst: structured output succeeded — 5 candidates
+Economic Analyst: finalised 5 candidate use cases: ['Automating Vendor Tendering and Procurement using Agentic AI Frameworks', 'Agentic AI for Proactive Logistics Disruption Resolution', 'Predictive Demand Sensing for Raw-Material Inventory Optimisation', 'AI-Augmented Logistics Planning and Execution', 'Generative AI for Predictive Quality Assurance Root Cause Analysis']
+Risk Assessor: enriching 5 candidate use cases with risk data
+Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+Risk Assessor [1/5]: assessing 'Automating Vendor Tendering and Procurement using Agentic AI Frameworks'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Risk Assessor [1/5]: successfully enriched 'Automating Vendor Tendering and Procurement using Agentic AI Frameworks'
+Risk Assessor [2/5]: assessing 'Agentic AI for Proactive Logistics Disruption Resolution'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Risk Assessor [2/5]: successfully enriched 'Agentic AI for Proactive Logistics Disruption Resolution'
+Risk Assessor [3/5]: assessing 'Predictive Demand Sensing for Raw-Material Inventory Optimisation'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Risk Assessor [3/5]: successfully enriched 'Predictive Demand Sensing for Raw-Material Inventory Optimisation'
+Risk Assessor [4/5]: assessing 'AI-Augmented Logistics Planning and Execution'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Risk Assessor [4/5]: successfully enriched 'AI-Augmented Logistics Planning and Execution'
+Risk Assessor [5/5]: assessing 'Generative AI for Predictive Quality Assurance Root Cause Analysis'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Risk Assessor [5/5]: successfully enriched 'Generative AI for Predictive Quality Assurance Root Cause Analysis'
+Risk Assessor: completed — 5/5 use cases enriched
+Red Team Critic: evaluating 5 candidates (error_count=0, max=2)
+Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+Red Team Critic [1/5]: reviewing 'Automating Vendor Tendering and Procurement using Agentic AI Frameworks'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Red Team Critic [1/5]: ❌ FAILED — 'Automating Vendor Tendering and Procurement using Agentic AI Frameworks': FIXABLE: The use case fails the Tendering Rigor axis. The title claims this is an 'Automating Vendor Tendering... using Agentic AI Frameworks' use case, but the description and implementation detail a
+Red Team Critic [2/5]: reviewing 'Agentic AI for Proactive Logistics Disruption Resolution'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Red Team Critic [2/5]: ❌ FAILED — 'Agentic AI for Proactive Logistics Disruption Resolution': FAIL. The use case fails the Hallucination Check due to a direct contradiction in its maturity claim and an overly optimistic ROI. While the risk and integration assessments are excellent and grounded
+Red Team Critic [3/5]: reviewing 'Predictive Demand Sensing for Raw-Material Inventory Optimisation'
+AFC is enabled with max remote calls: 10.
+Red Team Critic: structured output failed for 'Predictive Demand Sensing for Raw-Material Inventory Optimisation' ([WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) — trying raw JSON fallback
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Red Team Critic [3/5]: ✅ PASSED — 'Predictive Demand Sensing for Raw-Material Inventory Optimisation'
+Red Team Critic [4/5]: reviewing 'AI-Augmented Logistics Planning and Execution'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Red Team Critic [4/5]: ✅ PASSED — 'AI-Augmented Logistics Planning and Execution'
+Red Team Critic [5/5]: reviewing 'Generative AI for Predictive Quality Assurance Root Cause Analysis'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Red Team Critic [5/5]: ✅ PASSED — 'Generative AI for Predictive Quality Assurance Root Cause Analysis'
+Red Team Critic: 🔄 2 failures detected, error_count=1 (< max=2) — flagging for retry
+Router: error_count=1 < max=2, final_top_5 empty — routing back to ANALYST for refinement
+Economic Analyst: RETRY MODE (error_count=1) — revising 5 candidates based on Critic feedback
+Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Economic Analyst (revision): structured output succeeded — 5 candidates
+Economic Analyst: mandatory 'Vendor Tendering' use case missing — injecting default
+Economic Analyst (revision): finalised 5 revised candidates: ['Automating Vendor Tendering and Procurement using Agentic AI Frameworks', 'AI-Powered Spend Data Classification for Procurement Opportunity Identification', 'Agentic AI for Proactive Logistics Disruption Resolution', 'Predictive Demand Sensing for Raw-Material Inventory Optimisation', 'AI-Augmented Logistics Planning and Execution']
+Risk Assessor: enriching 5 candidate use cases with risk data
+Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+Risk Assessor [1/5]: assessing 'Automating Vendor Tendering and Procurement using Agentic AI Frameworks'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Risk Assessor [1/5]: successfully enriched 'Automating Vendor Tendering and Procurement using Agentic AI Frameworks'
+Risk Assessor [2/5]: assessing 'AI-Powered Spend Data Classification for Procurement Opportunity Identification'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Risk Assessor [2/5]: successfully enriched 'AI-Powered Spend Data Classification for Procurement Opportunity Identification'
+Risk Assessor [3/5]: assessing 'Agentic AI for Proactive Logistics Disruption Resolution'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Risk Assessor [3/5]: successfully enriched 'Agentic AI for Proactive Logistics Disruption Resolution'
+Risk Assessor [4/5]: assessing 'Predictive Demand Sensing for Raw-Material Inventory Optimisation'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Risk Assessor [4/5]: successfully enriched 'Predictive Demand Sensing for Raw-Material Inventory Optimisation'
+Risk Assessor [5/5]: assessing 'AI-Augmented Logistics Planning and Execution'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Risk Assessor [5/5]: successfully enriched 'AI-Augmented Logistics Planning and Execution'
+Risk Assessor: completed — 5/5 use cases enriched
+Red Team Critic: evaluating 5 candidates (error_count=1, max=2)
+Both GOOGLE_API_KEY and GEMINI_API_KEY are set. Using GOOGLE_API_KEY.
+Red Team Critic [1/5]: reviewing 'Automating Vendor Tendering and Procurement using Agentic AI Frameworks'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Red Team Critic [1/5]: ✅ PASSED — 'Automating Vendor Tendering and Procurement using Agentic AI Frameworks'
+Red Team Critic [2/5]: reviewing 'AI-Powered Spend Data Classification for Procurement Opportunity Identification'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Red Team Critic [2/5]: ❌ FAILED — 'AI-Powered Spend Data Classification for Procurement Opportunity Identification': The use case fails on the Tendering Rigor axis. While the Hallucination and Integration Reality checks are passed with flying colors—the ROI is plausible and the risk/integration assessment is excepti
+Red Team Critic [3/5]: reviewing 'Agentic AI for Proactive Logistics Disruption Resolution'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Red Team Critic [3/5]: ✅ PASSED — 'Agentic AI for Proactive Logistics Disruption Resolution'
+Red Team Critic [4/5]: reviewing 'Predictive Demand Sensing for Raw-Material Inventory Optimisation'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Red Team Critic [4/5]: ✅ PASSED — 'Predictive Demand Sensing for Raw-Material Inventory Optimisation'
+Red Team Critic [5/5]: reviewing 'AI-Augmented Logistics Planning and Execution'
+AFC is enabled with max remote calls: 10.
+HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent "HTTP/1.1 200 OK"
+Red Team Critic [5/5]: ❌ FAILED — 'AI-Augmented Logistics Planning and Execution': This use case fails the Hallucination Check due to a severe internal contradiction. The 'Maturity Level' is listed as 'Production_Ready', yet the risk assessment and implementation plan provide overwh
+Red Team Critic: ⚠️ Max retries (2) reached with 2 failures — forcing promotion to final_top_5
+Router: final_top_5 populated (5 use cases) — routing to END
+PDF report generated: C:\Users\soman\OneDrive\Coding\Godrej Assignment\outputs\output_report.pdf
