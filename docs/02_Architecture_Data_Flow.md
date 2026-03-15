@@ -87,7 +87,7 @@ graph TB
 This diagram shows the exact execution order of the compiled state machine, including the conditional reflection/retry loop after the Critic node.
 
 ```mermaid
-flowchart TD
+flowchart LR
     START(("▶ START"))
     ORCH["🎯 <b>Orchestrator</b><br/>──────────────<br/>Decomposes query into<br/>3–4 supply-chain<br/>research sub-domains"]
     SCRP["🔍 <b>Market Scraper</b><br/>──────────────<br/>3 Tavily queries per node<br/>→ LLM synthesis<br/>→ evidence strings"]

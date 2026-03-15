@@ -4,19 +4,72 @@
 This repository contains the official submission for Option A: Multi-Agent Research Assistant. The primary focus of this system is to maintain high microeconomic rigor and perform thorough enterprise risk assessment. It features an adversarial reflection loop specifically designed to filter out Large Language Model (LLM) hallucinations, ensuring reliable, enterprise-grade outputs.
 
 ## System Architecture
-![System Architecture Diagram](assets/architecture.png)
+
+The system is a multi-agent research pipeline built on **LangGraph**, orchestrated through a compiled state machine. All agents share a strict **Pydantic TypedDict** state contract and communicate via Gemini LLM calls with structured output enforcement.
+
 ```mermaid
-graph TD
-    START((START))
-    O[Orchestrator<br>Decomposes Nodes]
-    S[Market Scraper<br>Tavily Retrieval]
-    A[Economic Analyst<br>CapEx/OpEx & ROI]
-    R[Risk Assessor<br>Integration & Privacy]
-    C{Red Team Critic<br>Adversarial Check}
-    END((END))
-    START --> O --> S --> A --> R --> C
-    C -- "Fails (error_count < max)" --> A
-    C -- "Passes or Max Retries" --> END
+graph TB
+    subgraph "Entry Points"
+        CLI["🖥️ CLI<br/><code>main.py</code>"]
+        UI["🌐 Streamlit UI<br/><code>src/ui/app.py</code>"]
+    end
+
+    subgraph "Configuration Layer"
+        ENV[".env File"]
+        CFG["⚙️ config/settings.py<br/>─────────────────<br/>• LLM Provider Selection<br/>• API Key Management<br/>• Search Config<br/>• Agent Parameters"]
+    end
+
+    subgraph "LangGraph State Machine"
+        direction TB
+        GRAPH["🔄 Graph Builder<br/><code>src/graph/builder.py</code><br/>─────────────────<br/>Compiles StateGraph → app"]
+    end
+
+    subgraph "Agent Layer"
+        direction TB
+        ORCH["🎯 Orchestrator"]
+        SCRP["🔍 Market Scraper"]
+        ANAL["📊 Economic Analyst"]
+        RISK["⚠️ Risk Assessor"]
+        CRIT["🛡️ Red Team Critic"]
+    end
+
+    subgraph "External Services"
+        GEMINI["🤖 Gemini 2.5 Pro<br/>(Vertex AI)"]
+        TAVILY["🌍 Tavily Search API<br/>(Advanced Depth)"]
+    end
+
+    subgraph "Data Layer"
+        STATE["📋 GraphState<br/><code>src/state/graph_state.py</code>"]
+        MODELS["📐 Pydantic Models<br/>UseCase • EconomicImpact<br/>RiskAssessment • Enums"]
+    end
+
+    subgraph "Output Layer"
+        JSON_OUT["📄 JSON Report"]
+        PDF_OUT["📑 PDF Report"]
+        LOG_OUT["📝 Text Log"]
+    end
+
+    CLI --> GRAPH
+    UI --> GRAPH
+    ENV --> CFG
+    CFG --> GRAPH
+    CFG --> GEMINI
+    CFG --> TAVILY
+    GRAPH --> ORCH & SCRP & ANAL & RISK & CRIT
+    ORCH & ANAL & RISK & CRIT --> GEMINI
+    SCRP --> TAVILY
+    SCRP --> GEMINI
+    STATE --> MODELS
+    GRAPH --> STATE
+    GRAPH --> JSON_OUT & PDF_OUT & LOG_OUT
+
+    style CLI fill:#1e3a5f,stroke:#4a90d9,color:#fff
+    style UI fill:#1e3a5f,stroke:#4a90d9,color:#fff
+    style GEMINI fill:#0d47a1,stroke:#42a5f5,color:#fff
+    style TAVILY fill:#0d47a1,stroke:#42a5f5,color:#fff
+    style GRAPH fill:#1b5e20,stroke:#66bb6a,color:#fff
+    style STATE fill:#4a148c,stroke:#ab47bc,color:#fff
+    style MODELS fill:#4a148c,stroke:#ab47bc,color:#fff
 ```
 
 ## Repository Structure
