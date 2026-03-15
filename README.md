@@ -75,8 +75,6 @@ graph TB
 ## Repository Structure
 ```text
 .
-├── assets/
-│   └── architecture.png
 ├── config/
 │   └── settings.py
 ├── docs/
@@ -85,9 +83,6 @@ graph TB
 │   ├── 03_Technology_Choices.md
 │   └── 04_Evaluation_and_Limitations.md
 ├── outputs/
-│   ├── output_report.pdf
-│   ├── pipeline_run_20260315_121501.txt
-│   └── report_20260315_070456.json
 ├── scripts/
 │   ├── quick_check.py
 │   └── verify_integration.py
@@ -101,9 +96,6 @@ graph TB
 │   │   └── app.py
 │   └── utils/
 ├── tests/
-│   ├── test_agents.py
-│   ├── test_graph.py
-│   └── test_state.py
 ├── .env.example
 ├── main.py
 ├── README.md
